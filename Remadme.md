@@ -1,3 +1,6 @@
+
+* www 폴더를 만듭니다.
+```
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,3 +18,27 @@
 
 </body>
 </html>
+```
+
+* locals 폴더 내에 en.json, fr.json을 만듭니다.
+
+```
+{
+    "my": {
+        "key": "Salut"
+    },
+    "other": {
+        "key": "mec",
+        "ok": "confirmer"
+    },
+    "links": {
+        "baseAbsolute": "http://www.example.com/ja/",
+        "extension": "htm"
+    }
+}
+```
+
+* 실행합니다.
+```
+static-i18n -l en -i en -i fr www
+```

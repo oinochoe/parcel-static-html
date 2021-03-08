@@ -5,5 +5,9 @@
     "other": {
         "key": "mec",
         "ok": "confirmer"
+    },
+    "links": {
+        "baseAbsolute": "http://www.example.com/ja/",
+        "extension": "htm"
     }
 }

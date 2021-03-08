@@ -5,5 +5,9 @@
     "other": {
         "key": "man",
         "ok": "confirm"
+    },
+    "links": {
+        "baseAbsolute": "http://www.example.com/",
+        "extension": "html"
     }
 }
