@@ -10,8 +10,7 @@ const keyArray = getKey.Sheet1[0];
 const result = excelToJson({
     sourceFile: excelFileName,
     header: {
-        rows: 1,
-        cols: 1
+        rows: 1
     },
     columnToKey: keyArray,
 });
