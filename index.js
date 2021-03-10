@@ -24,7 +24,7 @@ const outSrc = fs
 for (let index = 0; index < fileLength; index++) {
     try {
         fs.writeFileSync(outSrc[index], JSON.stringify(result.Sheet1[index]));
-        console.log('생성 완료');
+        console.log('Success');
     } catch (err) {
         console.error(err);
     }
