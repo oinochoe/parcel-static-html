@@ -4,7 +4,7 @@
   "description": "You can excel to html via coloumns or etc",
   "main": "index.js",
   "scripts": {
-    "start": "npx static-i18n -l en -i en -i fr www",
+    "start": "npx static-i18n -l bdo_kr -i bdo_kr -i bdo_en www",
     "excel": "node index.js"
   },
   "repository": {

@@ -1,5 +1,5 @@
-npm excel
+npm run excel
 
 sleep 1
 
-npm start
+npm run start
