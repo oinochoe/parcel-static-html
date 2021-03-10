@@ -2,16 +2,16 @@
 const fs = require('fs');
 const out = 'www/locales';
 const excelToJson = require('convert-excel-to-json');
+const getKey = excelToJson({
+    sourceFile: 'input.xlsx',
+});
+const keyArray = getKey.Sheet1[0];
 const result = excelToJson({
-    sourceFile: 'test.xlsx',
+    sourceFile: 'input.xlsx',
     header: {
         rows: 1,
     },
-    columnToKey: {
-        A: 'dragon',
-        B: 'dragonSea',
-        C: 'dragonSeahore'
-    },
+    columnToKey: keyArray,
 });
 
 const fileLength = result.Sheet1.length; // 최상단 Row 제외
