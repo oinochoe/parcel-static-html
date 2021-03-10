@@ -1,7 +1,7 @@
 {
-  "name": "parcel-static-html",
-  "version": "1.0.0",
-  "description": "",
+  "name": "excel-to-html",
+  "version": "0.0.1",
+  "description": "You can excel to html via coloumns or etc",
   "main": "index.js",
   "scripts": {
     "start": "npx static-i18n -l en -i en -i fr www",
