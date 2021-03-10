@@ -1,29 +1,31 @@
 'use strict';
 const fs = require('fs');
-const out = 'www/locales';
+const excelFileName = 'input.xlsx';
+const out = 'www/locales/';
 const excelToJson = require('convert-excel-to-json');
 const getKey = excelToJson({
-    sourceFile: 'input.xlsx',
+    sourceFile: excelFileName,
 });
 const keyArray = getKey.Sheet1[0];
 const result = excelToJson({
-    sourceFile: 'input.xlsx',
+    sourceFile: excelFileName,
     header: {
         rows: 1,
+        cols: 1
     },
     columnToKey: keyArray,
 });
 
 const fileLength = result.Sheet1.length; // 최상단 Row 제외
-
-const outSrc = fs
-    .readdirSync(out)
-    .map((files) => `${out}/${files}`);
-
+let fileName = '';
 
 for (let index = 0; index < fileLength; index++) {
     try {
-        fs.writeFileSync(outSrc[index], JSON.stringify(result.Sheet1[index]));
+        fileName = out + result.Sheet1[index].country + '.json';
+        console.log(fileName)
+        fs.writeFile(fileName, JSON.stringify(result.Sheet1[index]), (err) => {
+            if(err) return console.log(err);
+        });
         console.log('Success');
     } catch (err) {
         console.error(err);
