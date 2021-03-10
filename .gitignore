@@ -1,3 +1,5 @@
 node_modules
 package-lock.json
-i18n/
+i18n
+yarn-error.log
+yarn.lock
