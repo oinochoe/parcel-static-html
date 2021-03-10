@@ -1,0 +1,23 @@
+{
+  "name": "parcel-static-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx static-i18n -l en -i en -i fr www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oinochoe/parcel-static-html.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oinochoe/parcel-static-html/issues"
+  },
+  "homepage": "https://github.com/oinochoe/parcel-static-html#readme",
+  "dependencies": {
+    "static-i18n": "^0.2.10"
+  }
+}
